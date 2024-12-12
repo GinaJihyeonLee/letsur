@@ -15,7 +15,7 @@ pip install PyPDF2 pandas scikit-learn datasets transformers
 **명령어:**
 
 ```bash
-python process_data.py pretraining --root_dir <PDF_파일_디렉터리> --output_dir <결과_저장_디렉터리>
+python preprocess_data.py pretraining --root_dir <PDF_파일_디렉터리> --output_dir <결과_저장_디렉터리>
 ```
 
 ### 2. 파인튜닝 데이터 처리
@@ -25,7 +25,7 @@ python process_data.py pretraining --root_dir <PDF_파일_디렉터리> --output
 **명령어:**
 
 ```bash
-python process_data.py finetuning --csv_path <CSV_파일_경로> --output_path <결과_저장_디렉터리>
+python preprocess_data.py finetuning --csv_path <CSV_파일_경로> --output_path <결과_저장_디렉터리>
 ```
 
 ### 3. CPT 데이터 전처리
@@ -35,7 +35,7 @@ python process_data.py finetuning --csv_path <CSV_파일_경로> --output_path <
 **명령어:**
 
 ```bash
-python process_data.py cpt --indexed_paths <인덱싱된_텍스트_경로> --tokenizer_path <토크나이저_경로> --output_path <결과_저장_디렉터리>
+python preprocess_data.py cpt --indexed_paths <인덱싱된_텍스트_경로> --tokenizer_path <토크나이저_경로> --output_path <결과_저장_디렉터리>
 ```
 
 # 모델 학습
