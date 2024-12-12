@@ -124,6 +124,7 @@ lm_eval \
 ### 2. llm-as-a-judge
 
 ```bash
+export OPENAI_API_KEY=<api_Key>
 python llm_as_a_judge.py \
   --model_name <모델_경로> \
   --trust_remote_code \
